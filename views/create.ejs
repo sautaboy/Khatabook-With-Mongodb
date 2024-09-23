@@ -1,0 +1,13 @@
+<%-include("nav.ejs")%>
+
+    <div class="container mt-4">
+        <h2>Add New Entry</h2>
+        <form id="addEntryForm" action="/create" method="POST">
+            <div class="form-group">
+                <input type="text" name="title" placeholder="title " style="margin: 10px 0;width: 100%; padding: 5px;"
+                    required>
+                <textarea class="form-control" id="entryText" name="details" rows="20" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success mt-2">Submit</button>
+        </form>
+    </div>

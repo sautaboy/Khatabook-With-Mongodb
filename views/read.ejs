@@ -1,0 +1,24 @@
+<%-include("nav.ejs")%>
+    <div class="container mt-4">
+
+        <h2>
+            <span>
+                <%=details.title%>
+            </span>
+            <a href="/update/<%=details.title%>">
+                <button class="btn btn-primary btn-sm">
+                    Edit
+                </button>
+            </a>
+
+        </h2>
+        <div id="sentencesContainer">
+            <div class="sentence-item d-flex justify-content-between align-items-center">
+                <p>
+                    <%=details.details%>
+                </p>
+                <br>
+
+            </div>
+        </div>
+    </div>
